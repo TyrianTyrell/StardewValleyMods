@@ -10,19 +10,10 @@ namespace Magic.Framework.Schools
         public ToilSchool()
             : base(SchoolId.Toil) { }
 
-        public override Spell[] GetSpellsTier1()
-        {
-            return new[] { SpellManager.Get("toil:cleardebris"), SpellManager.Get("toil:till") };
-        }
+        public override Spell[] SpellsTier1 = new[] { SpellManager.Get("toil:cleardebris"), SpellManager.Get("toil:till") };
 
-        public override Spell[] GetSpellsTier2()
-        {
-            return new[] { SpellManager.Get("toil:water") };
-        }
+        public override Spell[] SpellsTier2 = new[] { SpellManager.Get("toil:water") };
 
-        public override Spell[] GetSpellsTier3()
-        {
-            return new[] { SpellManager.Get("toil:blink") };
-        }
+        public override Spell[] GetSpellsTier3 = new[] { SpellManager.Get("toil:blink") };
     }
 }
