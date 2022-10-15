@@ -10,19 +10,10 @@ namespace Magic.Framework.Schools
         public NatureSchool()
             : base(SchoolId.Nature) { }
 
-        public override Spell[] GetSpellsTier1()
-        {
-            return new[] { SpellManager.Get("nature:lantern"), SpellManager.Get("nature:tendrils") };
-        }
+        public override Spell[] SpellsTier1 = new[] { SpellManager.Get("nature:lantern"), SpellManager.Get("nature:tendrils") };
 
-        public override Spell[] GetSpellsTier2()
-        {
-            return new[] { SpellManager.Get("nature:shockwave") };
-        }
+        public override Spell[] SpellsTier2 = new[] { SpellManager.Get("nature:shockwave") };
 
-        public override Spell[] GetSpellsTier3()
-        {
-            return new[] { SpellManager.Get("nature:photosynthesis") };
-        }
+        public override Spell[] SpellsTier3 = new[] { SpellManager.Get("nature:photosynthesis") };
     }
 }
