@@ -14,6 +14,6 @@ namespace Magic.Framework.Schools
 
         public override Spell[] SpellsTier2 = new[] { SpellManager.Get("toil:water") };
 
-        public override Spell[] GetSpellsTier3 = new[] { SpellManager.Get("toil:blink") };
+        public override Spell[] SpellsTier3 = new[] { SpellManager.Get("toil:blink") };
     }
 }
