@@ -10,19 +10,10 @@ namespace Magic.Framework.Schools
         public EldritchSchool()
             : base(SchoolId.Eldritch) { }
 
-        public override Spell[] GetSpellsTier1()
-        {
-            return new[] { SpellManager.Get("eldritch:meteor"), SpellManager.Get("eldritch:bloodmana") };
-        }
+        public override Spell[] SpellsTier1 = new[] { SpellManager.Get("eldritch:meteor"), SpellManager.Get("eldritch:bloodmana") };
 
-        public override Spell[] GetSpellsTier2()
-        {
-            return new[] { SpellManager.Get("eldritch:lucksteal") };
-        }
+        public override Spell[] SpellsTier2 = new[] { SpellManager.Get("eldritch:lucksteal") };
 
-        public override Spell[] GetSpellsTier3()
-        {
-            return new[] { SpellManager.Get("eldritch:spirit") };
-        }
+        public override Spell[] SpellsTier3 = new[] { SpellManager.Get("eldritch:spirit") };
     }
 }
