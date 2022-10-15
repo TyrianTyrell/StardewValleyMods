@@ -10,19 +10,10 @@ namespace Magic.Framework.Schools
         public ElementalSchool()
             : base(SchoolId.Elemental) { }
 
-        public override Spell[] GetSpellsTier1()
-        {
-            return new[] { SpellManager.Get("elemental:fireball"), SpellManager.Get("elemental:frostbolt") };
-        }
+        public override Spell[] SpellsTier1 = new[] { SpellManager.Get("elemental:fireball"), SpellManager.Get("elemental:frostbolt") };
 
-        public override Spell[] GetSpellsTier2()
-        {
-            return new[] { SpellManager.Get("elemental:descend") };
-        }
+        public override Spell[] SpellsTier2 = new[] { SpellManager.Get("elemental:descend") };
 
-        public override Spell[] GetSpellsTier3()
-        {
-            return new[] { SpellManager.Get("elemental:teleport") };
-        }
+        public override Spell[] SpellsTier3 = new[] { SpellManager.Get("elemental:teleport") }
     }
 }
