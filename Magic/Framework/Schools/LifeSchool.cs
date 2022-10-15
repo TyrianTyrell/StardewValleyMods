@@ -10,19 +10,10 @@ namespace Magic.Framework.Schools
         public LifeSchool()
             : base(SchoolId.Life) { }
 
-        public override Spell[] GetSpellsTier1()
-        {
-            return new[] { SpellManager.Get("life:evac") };
-        }
+        public override Spell[] SpellsTier1 = new[] { SpellManager.Get("life:evac") };
 
-        public override Spell[] GetSpellsTier2()
-        {
-            return new[] { SpellManager.Get("life:heal"), SpellManager.Get("life:haste") };
-        }
+        public override Spell[] SpellsTier2 = new[] { SpellManager.Get("life:heal"), SpellManager.Get("life:haste") };
 
-        public override Spell[] GetSpellsTier3()
-        {
-            return new[] { SpellManager.Get("life:buff") };
-        }
+        public override Spell[] SpellsTier3 = new[] { SpellManager.Get("life:buff") };
     }
 }
